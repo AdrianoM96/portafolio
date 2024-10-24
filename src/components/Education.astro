@@ -1,0 +1,56 @@
+<!-- ---
+import EducationItem from "./EducationItem.astro"
+const EDUCATION = [
+  {
+    date: "2019 - 2024 ",
+    title: "Tecnicatura superior en programacion",
+    company:"Universidad tecnológica nacional ",
+    description:
+      "",
+  },
+  {
+    date: "2023 ",
+    title: "Curso avanzado reactJs",
+    company:"Coder house ",
+    description:
+      "Ecommcer full stack ReactJs, firebase",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EDUCATION.map((education) => (
+      <li class="">
+        <EducationItem {...education} />
+      </li>
+    ))
+  }
+</ol> -->
+---
+const EDUCATION = [
+  {
+    institution: "Universidad tecnológica nacional",
+    degree: "Técnico superior en programación",
+    years: "2019 - 2024"
+  },
+   {
+    institution: "Coder House",
+    degree: "Full stack ReactJs y firebase",
+    years: "2023"
+  }
+];
+---
+
+<div class="max-w-2xl p-6  text-white">
+    
+    {EDUCATION.map((edu) => (
+      <div class="mb-8 p-6 bg-[#1a1a2e] rounded-lg"> <!-- Fondo más claro y separación entre items -->
+        <h3 class="text-xl font-semibold text-[#ffd60a]">{edu.institution}</h3>
+        <p class="text-gray-300">{edu.degree}</p>
+        <p class="text-gray-400">{edu.years}</p>
+      </div>
+    ))}
+  </div>
+  
+  
