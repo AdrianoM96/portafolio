@@ -4,6 +4,8 @@ import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import JavaScript from "./icons/JavaScript.astro"
 import Php from "./icons/Php.astro"
+import Solidity from "./icons/Solidity.astro"
+import React from "./icons/ReactJs.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
@@ -28,6 +30,16 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Php,
   },
+  REACT: {
+    name: "React",
+    class: "bg-black text-white",
+    icon: React,
+  },
+  SOLIDITY: {
+    name: "Solidity",
+    class: "bg-[#003159] text-white",
+    icon: Solidity,
+  },
 }
 const PROJECTS = [
   {
@@ -46,6 +58,14 @@ const PROJECTS = [
   image: "/projects/agroquimicos.png",
   tags: [TAGS.PHP, TAGS.JAVASCRIPT]
   },
+  {
+  title: "E-commerce simple ",
+  description: "Compra y venta de propiedades como NFT utilizando contrato inteligente desarrollado con Solidity",
+  github: "https://github.com/AdrianoM96/sell-buy-nft-solidity",
+  image: "/projects/millow.png",
+  tags: [TAGS.REACT, TAGS.SOLIDITY]
+  },
+
 ]
 ---
 
